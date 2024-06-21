@@ -99,10 +99,10 @@ nav {
     }
   }
 }
-main {
-  padding-left: 135px;
-}
+
 .hero {
+  display: flex;
+  justify-content: center;
   .all {
     display: flex;
     max-width: 1170px !important;
@@ -158,6 +158,7 @@ main {
 
 .Categories {
   padding-top: 94px;
+  padding-left: 170px;
   .par9 {
     padding-top: 70px;
     display: flex;
@@ -221,6 +222,7 @@ main {
 }
 .par {
   padding-top: 70px;
+  padding-left: 170px;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -261,17 +263,16 @@ main {
   display: flex;
   flex-wrap: wrap;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 26px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 24px;
 }
 
 .products-container {
   li {
     flex-grow: 1;
     padding: 1rem;
-
+    background-color: #000;
     border: 1px solid rgba(0, 0, 0, 0.114);
-    border-radius: 16px;
     background-color: #fffbfb;
     transition: all 0.5s ease;
     &:hover {
@@ -283,14 +284,12 @@ main {
   li {
     flex-grow: 1;
     padding: 1rem;
+    display: flex;
+    gap: 50px;
 
     border: 1px solid rgba(0, 0, 0, 0.114);
     border-radius: 16px;
     background-color: #fffbfb;
-    transition: all 0.5s ease;
-    &:hover {
-      box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-    }
   }
 }
 
@@ -309,50 +308,39 @@ main {
   overflow: hidden;
   font-weight: 500;
 }
-
-.products-container {
-  li {
-    button {
-      margin-left: 12px;
-      font-weight: 700;
-      max-width: 186px;
-      background-color: transparent;
-      color: #454444;
-      border: 3px solid #454444;
-      padding: 22px 35px;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.5s ease;
-      &:hover {
-        background-color: #454444;
-        color: white;
-      }
-    }
-  }
+#apps {
+  display: flex;
+  justify-content: center;
 }
 .product-container {
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   li {
     button {
-      margin-left: 12px;
-      font-weight: 700;
-      max-width: 186px;
-      background-color: transparent;
-      color: #454444;
-      border: 3px solid #454444;
-      padding: 22px 35px;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.5s ease;
+      padding: 16px 48px 16px 48px;
+      background-color: #db4444;
+      color: #fff;
+      border: none;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      transition: 0.4s;
       &:hover {
-        background-color: #454444;
-        color: white;
+        background-color: #fff;
+        color: #db4444;
+        border: 1px solid #db4444;
       }
     }
   }
 }
-
 #app {
-  padding-top: 138px;
+  padding-top: 70px;
+  padding-left: 159px;
 }
 .menu {
   border: 0;
@@ -361,7 +349,51 @@ main {
   cursor: pointer;
 }
 
+.c {
+  max-width: 234px;
+  width: 100%;
+  padding: 16px 48px 16px 48px;
+  background-color: #db4444;
+  color: #fff;
+  border: none;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  transition: 0.4s;
+  &:hover {
+    background-color: #fff;
+    color: #db4444;
+    border: 1px solid #db4444;
+  }
+}
+
+.v {
+  display: flex;
+  justify-content: center;
+}
+.title {
+  padding-top: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.product-title {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
 @media (max-width: 458px) {
+  .product-container {
+    li {
+      flex-wrap: wrap;
+    }
+  }
   .before {
     flex-wrap: wrap;
     .par1 {
@@ -497,7 +529,7 @@ main {
     justify-content: center;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 976px) {
   .before {
     flex-wrap: wrap;
     .par1 {

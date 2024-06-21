@@ -45,15 +45,15 @@ function renderProducts(products) {
     console.log("Rendering product:", product);
 
     const li = document.createElement("li");
-    li.style.width = "300px";
-    li.style.height = "440px";
+    li.style.width = "250px";
+    li.style.height = "460px";
 
     const imgLink = document.createElement("a");
     imgLink.href = `../pages/product.html?id=${product.id}&title=${product.title}`;
     const img = document.createElement("img");
     img.src = product.image;
     img.alt = product.title;
-    img.style.width = "250px";
+    img.style.width = "200px";
     imgLink.style.width = "100%";
     imgLink.append(img);
     li.append(imgLink);
@@ -64,6 +64,7 @@ function renderProducts(products) {
 
     const ratingContainer = document.createElement("div");
     ratingContainer.style.display = "flex";
+    ratingContainer.style.alignItems = "center";
 
     const starsContainer = document.createElement("div");
     starsContainer.insertAdjacentHTML(
