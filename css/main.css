@@ -385,6 +385,12 @@ nav .par5 .p {
 }
 
 @media (max-width: 458px) {
+  .hero .part1 .par8 {
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
   .product-container li {
     flex-wrap: wrap;
   }
@@ -429,15 +435,21 @@ nav .par5 .p {
   .open {
     box-shadow: none;
   }
-  main {
-    padding-left: 8px;
-  }
   .all {
     flex-wrap: wrap;
   }
   .cards {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .par {
+    padding-left: 0;
+  }
+  #app {
+    padding-left: 0;
+  }
+  .Categories {
+    padding-left: 0;
   }
   .Categories .par9 {
     justify-content: center;
@@ -454,11 +466,26 @@ nav .par5 .p {
   }
 }
 @media (max-width: 768px) {
+  .hero .part1 .par8 {
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .product-container li {
+    flex-wrap: wrap;
+  }
   .before {
     flex-wrap: wrap;
   }
   .before .par1 {
     flex-wrap: wrap;
+  }
+  .par {
+    padding-left: 0;
+  }
+  #app {
+    padding-left: 0;
   }
   .nav-items {
     flex-direction: column;
@@ -495,15 +522,15 @@ nav .par5 .p {
   .open {
     box-shadow: none;
   }
-  main {
-    padding-left: 8px;
-  }
   .all {
     flex-wrap: wrap;
   }
   .cards {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .Categories {
+    padding-left: 0;
   }
   .Categories .par9 {
     justify-content: center;
@@ -520,6 +547,21 @@ nav .par5 .p {
   }
 }
 @media (max-width: 976px) {
+  .hero .part1 .par8 {
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .product-container li {
+    flex-wrap: wrap;
+  }
+  .par {
+    padding-left: 0;
+  }
+  #app {
+    padding-left: 0;
+  }
   .before {
     flex-wrap: wrap;
   }
@@ -561,15 +603,15 @@ nav .par5 .p {
   .open {
     box-shadow: none;
   }
-  main {
-    padding-left: 8px;
-  }
   .all {
     flex-wrap: wrap;
   }
   .cards {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .Categories {
+    padding-left: 0;
   }
   .Categories .par9 {
     justify-content: center;
