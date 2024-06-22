@@ -278,6 +278,22 @@ nav {
     &:hover {
       box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
     }
+    button {
+      margin-top: 16px;
+      max-width: 250px;
+      width: 100%;
+      padding: 8px 68px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 0px 0px 4px 4px;
+      opacity: 0px;
+      transition: 0.5s;
+      &:hover {
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #000;
+      }
+    }
   }
 }
 .product-container {
@@ -575,6 +591,13 @@ nav {
   }
 }
 @media (max-width: 768px) {
+  .all2 {
+    flex-wrap: wrap;
+    gap: 60px;
+    .part {
+      padding-left: 20px;
+    }
+  }
   .hero {
     .part1 {
       .par8 {
@@ -663,6 +686,13 @@ nav {
   }
 }
 @media (max-width: 976px) {
+  .all2 {
+    flex-wrap: wrap;
+    gap: 60px;
+    .part {
+      padding-left: 20px;
+    }
+  }
   .hero {
     .part1 {
       .par8 {

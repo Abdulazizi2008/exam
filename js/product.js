@@ -74,8 +74,8 @@ function renderProduct(product) {
   price.textContent = `$${product.price}`;
   div2.append(price);
   const description = document.createElement("p");
-  description.textContent =
-    "PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install & mess free removal Pressure sensitive.";
+  description.textContent = product.description;
+
   description.style.fontSize = "14px";
   description.style.fontWeight = "400";
   description.style.paddingTop = "20px";

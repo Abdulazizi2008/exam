@@ -96,6 +96,10 @@ function renderProducts(products) {
     price.textContent = `$${product.price}`;
     li.append(price);
 
+    const btn = document.createElement("button");
+    btn.textContent = "Add to cart";
+    li.append(btn);
+
     container.append(li);
   });
 }
