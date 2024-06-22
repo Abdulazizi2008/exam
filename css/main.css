@@ -384,7 +384,99 @@ nav .par5 .p {
   text-align: left;
 }
 
+.all2 {
+  padding-top: 60px;
+  display: flex;
+  gap: 129px;
+  align-items: center;
+}
+.all2 .imgg img {
+  max-width: 805px;
+  width: 100%;
+}
+.all2 .part .a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.all2 .part .a div {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.all2 .part .a p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.all2 .part form {
+  display: block;
+}
+.all2 .part .form-control {
+  margin-bottom: 3rem;
+}
+.all2 .part .form__login {
+  padding-top: 48px;
+  margin: auto;
+}
+.all2 .part .form__login .conte {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.all2 .part .form__login .conte p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #db4444;
+}
+.all2 .part .form__login .conte button {
+  max-width: 143px;
+  width: 100%;
+  padding: 16px 48px 16px 48px;
+  background-color: #db4444;
+  color: #fff;
+  border: none;
+  transition: 0.4s;
+}
+.all2 .part .form__login .conte button:hover {
+  background-color: #fff;
+  color: #db4444;
+  border: 1px solid #db4444;
+}
+.all2 .part label {
+  margin-bottom: 0.8rem;
+}
+.all2 .part .form-control input {
+  border: none;
+  border-bottom: 2px solid;
+  padding: 0.5rem;
+  width: 100%;
+}
+.all2 .part .form-control input:focus {
+  outline: none;
+  border-bottom-color: rgb(171, 168, 168);
+}
+.all2 .part .form-control input::-moz-placeholder {
+  color: #454444;
+}
+.all2 .part .form-control input::placeholder {
+  color: #454444;
+}
+
 @media (max-width: 458px) {
+  .all2 {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .all2 .part {
+    padding-left: 20px;
+  }
   .hero .part1 .par8 {
     font-size: 32px;
     line-height: 24px;

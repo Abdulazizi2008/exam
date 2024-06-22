@@ -1,3 +1,5 @@
+import { checkToken, redirect } from "./utils.js";
+
 const header = document.querySelector("header");
 const menuBtn = document.querySelector(".menu");
 
@@ -5,6 +7,16 @@ menuBtn.addEventListener("click", () => {
   header.classList.toggle("open");
 });
 const container = document.querySelector(".products-container");
+
+(async function () {
+  const products = await fetchProducts();
+  renderProducts(products);
+
+  const hasToken = checkToken();
+  if (hasToken == false) {
+    redirect("../pages/log_in.html");
+  }
+})();
 
 async function fetchProducts() {
   try {
@@ -87,13 +99,3 @@ function renderProducts(products) {
     container.append(li);
   });
 }
-
-(async function init() {
-  console.log("Initializing...");
-  const products = await fetchProducts();
-  if (products.length > 0) {
-    renderProducts(products);
-  } else {
-    console.log("No products to render.");
-  }
-})();
